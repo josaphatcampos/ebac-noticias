@@ -3,13 +3,15 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 56;
+	objectVersion = 53;
 	objects = {
 
 /* Begin PBXBuildFile section */
+		4D60A76629D33CED00FF3445 /* NetworkTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D60A76529D33CED00FF3445 /* NetworkTableViewCell.swift */; };
+		4D60A76929D342FE00FF3445 /* imageextensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D60A76829D342FE00FF3445 /* imageextensions.swift */; };
 		4DF2494329883A6100046046 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4DF2494229883A6100046046 /* AppDelegate.swift */; };
 		4DF2494529883A6100046046 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4DF2494429883A6100046046 /* SceneDelegate.swift */; };
-		4DF2494729883A6100046046 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4DF2494629883A6100046046 /* ViewController.swift */; };
+		4DF2494729883A6100046046 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4DF2494629883A6100046046 /* MainViewController.swift */; };
 		4DF2494A29883A6100046046 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4DF2494829883A6100046046 /* Main.storyboard */; };
 		4DF2494D29883A6100046046 /* ebac_noticias.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 4DF2494B29883A6100046046 /* ebac_noticias.xcdatamodeld */; };
 		4DF2494F29883A6300046046 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4DF2494E29883A6300046046 /* Assets.xcassets */; };
@@ -17,6 +19,9 @@
 		4DF2495D29883A6300046046 /* ebac_noticiasTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4DF2495C29883A6300046046 /* ebac_noticiasTests.swift */; };
 		4DF2496729883A6300046046 /* ebac_noticiasUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4DF2496629883A6300046046 /* ebac_noticiasUITests.swift */; };
 		4DF2496929883A6300046046 /* ebac_noticiasUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4DF2496829883A6300046046 /* ebac_noticiasUITestsLaunchTests.swift */; };
+		4DF249C9298AC0D800046046 /* NetworkManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4DF249C8298AC0D800046046 /* NetworkManager.swift */; };
+		4DF249CB298AC3EC00046046 /* ResponseNews.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4DF249CA298AC3EC00046046 /* ResponseNews.swift */; };
+		4DF249CD298ADEA100046046 /* NewsData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4DF249CC298ADEA100046046 /* NewsData.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -37,10 +42,12 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		4D60A76529D33CED00FF3445 /* NetworkTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkTableViewCell.swift; sourceTree = "<group>"; };
+		4D60A76829D342FE00FF3445 /* imageextensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = imageextensions.swift; sourceTree = "<group>"; };
 		4DF2493F29883A6100046046 /* ebac-noticias.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "ebac-noticias.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		4DF2494229883A6100046046 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		4DF2494429883A6100046046 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		4DF2494629883A6100046046 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		4DF2494629883A6100046046 /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
 		4DF2494929883A6100046046 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		4DF2494C29883A6100046046 /* ebac_noticias.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = ebac_noticias.xcdatamodel; sourceTree = "<group>"; };
 		4DF2494E29883A6300046046 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -51,6 +58,9 @@
 		4DF2496229883A6300046046 /* ebac-noticiasUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "ebac-noticiasUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		4DF2496629883A6300046046 /* ebac_noticiasUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ebac_noticiasUITests.swift; sourceTree = "<group>"; };
 		4DF2496829883A6300046046 /* ebac_noticiasUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ebac_noticiasUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		4DF249C8298AC0D800046046 /* NetworkManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkManager.swift; sourceTree = "<group>"; };
+		4DF249CA298AC3EC00046046 /* ResponseNews.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResponseNews.swift; sourceTree = "<group>"; };
+		4DF249CC298ADEA100046046 /* NewsData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewsData.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -78,6 +88,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		4D60A76729D342E100FF3445 /* utils */ = {
+			isa = PBXGroup;
+			children = (
+				4D60A76829D342FE00FF3445 /* imageextensions.swift */,
+			);
+			path = utils;
+			sourceTree = "<group>";
+		};
 		4DF2493629883A6100046046 = {
 			isa = PBXGroup;
 			children = (
@@ -101,12 +119,11 @@
 		4DF2494129883A6100046046 /* ebac-noticias */ = {
 			isa = PBXGroup;
 			children = (
-				4DF2494229883A6100046046 /* AppDelegate.swift */,
-				4DF2494429883A6100046046 /* SceneDelegate.swift */,
-				4DF2494629883A6100046046 /* ViewController.swift */,
-				4DF2494829883A6100046046 /* Main.storyboard */,
+				4D60A76729D342E100FF3445 /* utils */,
+				4DF249C6298AC05D00046046 /* View */,
+				4DF249C7298AC06500046046 /* Controller */,
+				4DF249C5298AC05000046046 /* Model */,
 				4DF2494E29883A6300046046 /* Assets.xcassets */,
-				4DF2495029883A6300046046 /* LaunchScreen.storyboard */,
 				4DF2495329883A6300046046 /* Info.plist */,
 				4DF2494B29883A6100046046 /* ebac_noticias.xcdatamodeld */,
 			);
@@ -128,6 +145,44 @@
 				4DF2496829883A6300046046 /* ebac_noticiasUITestsLaunchTests.swift */,
 			);
 			path = "ebac-noticiasUITests";
+			sourceTree = "<group>";
+		};
+		4DF249C5298AC05000046046 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				4DF249C8298AC0D800046046 /* NetworkManager.swift */,
+				4DF249CA298AC3EC00046046 /* ResponseNews.swift */,
+				4DF249CC298ADEA100046046 /* NewsData.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		4DF249C6298AC05D00046046 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				4DF249CE298AE0F000046046 /* Cell */,
+				4DF2494829883A6100046046 /* Main.storyboard */,
+				4DF2495029883A6300046046 /* LaunchScreen.storyboard */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		4DF249C7298AC06500046046 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				4DF2494229883A6100046046 /* AppDelegate.swift */,
+				4DF2494429883A6100046046 /* SceneDelegate.swift */,
+				4DF2494629883A6100046046 /* MainViewController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		4DF249CE298AE0F000046046 /* Cell */ = {
+			isa = PBXGroup;
+			children = (
+				4D60A76529D33CED00FF3445 /* NetworkTableViewCell.swift */,
+			);
+			path = Cell;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -210,7 +265,7 @@
 				};
 			};
 			buildConfigurationList = 4DF2493A29883A6100046046 /* Build configuration list for PBXProject "ebac-noticias" */;
-			compatibilityVersion = "Xcode 14.0";
+			compatibilityVersion = "Xcode 8.0";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
 			knownRegions = (
@@ -261,10 +316,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				4DF2494729883A6100046046 /* ViewController.swift in Sources */,
+				4D60A76929D342FE00FF3445 /* imageextensions.swift in Sources */,
+				4DF2494729883A6100046046 /* MainViewController.swift in Sources */,
+				4DF249CB298AC3EC00046046 /* ResponseNews.swift in Sources */,
+				4D60A76629D33CED00FF3445 /* NetworkTableViewCell.swift in Sources */,
 				4DF2494329883A6100046046 /* AppDelegate.swift in Sources */,
+				4DF249C9298AC0D800046046 /* NetworkManager.swift in Sources */,
 				4DF2494D29883A6100046046 /* ebac_noticias.xcdatamodeld in Sources */,
 				4DF2494529883A6100046046 /* SceneDelegate.swift in Sources */,
+				4DF249CD298ADEA100046046 /* NewsData.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
