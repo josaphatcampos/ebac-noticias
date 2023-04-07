@@ -28,11 +28,5 @@ class NetworkTableViewCell: UITableViewCell {
         // Configure the view for the selected state
     }
     
-    func prepare(with news: NewsData){
-        celltitlelabel.text = news.title
-        bylinelabel.text = news.byline
-        
-        cellimageview.load(url: URL(string: news.image)!)
-    }
 
 }
